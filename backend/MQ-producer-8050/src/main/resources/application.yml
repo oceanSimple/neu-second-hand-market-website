@@ -1,0 +1,30 @@
+server:
+  port: 8050
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+  redis:
+    database: 2
+    host: localhost
+    port: 6379
+    password: 111111
+    timeout: 10000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+email:
+  host: smtp.qq.com
+  protocol: smtp
+  username: 1252074183@qq.com
+  password: vennihzjcgaxjbji
+  port: 587
+  default-encoding: UTF-8
+  from: 1252074183@qq.com
