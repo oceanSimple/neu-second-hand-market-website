@@ -10,11 +10,16 @@ import '@/style/index.scss'
 import pinia from './store'
 // 引入路由
 import router from './router'
+// 引入svg图标
+import 'virtual:svg-icons-register'
+// 引入全局组件
+import globalComponent from './components/index'
 
 const app = createApp(App)
 
 app.use(ElementPlus)
 app.use(pinia)
 app.use(router)
+app.use(globalComponent)
 
 app.mount('#app')

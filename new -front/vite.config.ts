@@ -1,10 +1,20 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+// 引入svg图标插件
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    // 注册svg图标插件
+    createSvgIconsPlugin({
+      // 配置需要自动导入的svg文件路径
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/icon')],
+      // 配置symbolId格式
+      symbolId: 'icon-[dir]-[name]',
+    }),
+  ],
   resolve: {
     // 相对路径别名配置，使用 @ 代替 src
     alias: {

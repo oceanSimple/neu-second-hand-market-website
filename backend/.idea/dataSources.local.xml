@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-231.8109.175">
+  <component name="dataSourceStorageLocal" created-in="IU-231.9392.1">
     <data-source name="@localhost" uuid="67a8a43b-512a-401a-a72a-e81212f75846">
       <database-info product="MySQL" version="5.5.40" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="5.5.40" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
@@ -13,7 +13,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="user_neu_secend_hand_market_website" />
+            <name qname="user_neu_second_hand_market_website" />
           </node>
         </introspection-scope>
       </schema-mapping>

@@ -351,6 +351,139 @@ declare module '*.vue' {
    },
    ```
 
+## 引入全局icon
+
+1. src/components/index.ts
+
+   ```ts
+   import * as ElementPlusIconVue from '@element-plus/icons-vue'
+   
+   export default {
+     install: (app: any) => {
+       //将element-plus提供图标注册为全局组件
+       for (const [key, component] of Object.entries(ElementPlusIconVue)) {
+         app.component(key, component)
+       }
+     },
+   }
+   ```
+2. main.ts中引入
+
+   ```ts
+   //引入自定义插件对象:注册整个项目全局组件
+   import gloalComponent from '@/components'
+   
+   app.use(gloalComponent)
+   ```
+
+## 引入全局组件icon
+
+1. 安装
+
+   ```shell
+   pnpm install vite-plugin-svg-icons -D
+   ```
+
+2. vite.config.ts中引入
+
+   ```ts
+   import { defineConfig } from 'vite'
+   import vue from '@vitejs/plugin-vue'
+   import path from 'path'
+   // 引入svg图标插件
+   import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+   
+   export default defineConfig({
+     plugins: [
+       vue(),
+       // 注册svg图标插件
+       createSvgIconsPlugin({
+         // 配置需要自动导入的svg文件路径
+         iconDirs: [path.resolve(process.cwd(), 'src/assets/icon')],
+         // 配置symbolId格式
+         symbolId: 'icon-[dir]-[name]',
+       }),
+     ],
+     resolve: {
+       // 相对路径别名配置，使用 @ 代替 src
+       alias: {
+         '@': path.resolve('./src'),
+       },
+     },
+     // scss全局变量配置
+     css: {
+       preprocessorOptions: {
+         scss: {
+           javascriptEnabled: true,
+           additionalData: '@import "./src/style/variable.scss";',
+         },
+       },
+     },
+     // 跨域配置
+     server: {
+       proxy: {
+         '/api': {
+           target: 'http://localhost:8000',
+           changeOrigin: true,
+           rewrite: (path) => path.replace(/^\/api/, ''),
+         },
+       },
+     },
+   })
+   ```
+3. 在main.ts中引入
+
+   ```ts
+   // 引入svg图标
+   import 'virtual:svg-icons-register'
+   ```
+4. 在src/assets/icon中创建svg文件
+   ```svg
+   <svg>
+     <use xlink:href="#icon-vue"></use>
+   </svg>
+   ```
+5. 自定义模板
+   > src/components/svgIcon/index.vue
+   ```
+   <template>
+     <div>
+       <svg :style="{ width, height }">
+         <use :fill="color" :xlink:href="prefix + name"></use>
+       </svg>
+     </div>
+   </template>
+   
+   <script lang="ts" setup>
+   // 接收父组件传递的参数
+   defineProps({
+     // xlink:href的前缀
+     prefix: {
+       type: String,
+       default: '#icon-',
+     },
+     // 图标名称
+     name: String,
+     // 颜色
+     color: {
+       type: String,
+       default: '',
+     },
+     // 大小
+     width: {
+       type: String,
+       default: '50px',
+     },
+     height: {
+       type: String,
+       default: '50px',
+     },
+   })
+   </script>
+   
+   <style scoped></style>
+   ```
+
 # pinia仓库
 
 1. 安装
@@ -369,10 +502,8 @@ declare module '*.vue' {
 3. main.ts中引入
    ```ts
    // 引入仓库
-
-import pinia from './store'
-app.use(pinia)
-
+   import pinia from './store'
+   app.use(pinia)
    ```
 4. 创建小仓库
    ```ts
@@ -387,6 +518,32 @@ app.use(pinia)
      },
      actions: {},
    })
+   ```
+5. 注册全局组件
+   ```ts
+   // 对外暴露插件对象
+   import SvgIcon from './SvgIcon/index.vue'
+   import type { App, Component } from 'vue'
+   
+   const components: { [name: string]: Component } = { SvgIcon }
+   
+   export default {
+     install(app: App) {
+       Object.keys(components).forEach((key: string) => {
+         app.component(key, components[key])
+       })
+     },
+   }
+   ```
+6. main.ts
+
+   ```ts
+   import globalComponent from './components/index' // 引入全局组件
+   app.use(globalComponent) // 注册全局组件
+   ```
+7. 使用
+   ```
+    <SvgIcon color="pink" name="home"></SvgIcon>
    ```
 
 # 路由搭建
@@ -503,14 +660,16 @@ app.use(pinia)
 3. 举例使用
    > ResponseData是一个泛型接口，用于约束返回的数据类型
    ```ts
+
 import request from '@/util/request'
 import {LoginParams, User} from '@/api/user/type'
 import {ResponseData} from '@/api/type'
-   
-   enum Api {
-     LOGIN_URL = '/user/login',
-   }
-   
-   export const reqUserLogin = (data: LoginParams) =>
-     request.post<any, ResponseData<User>>(Api.LOGIN_URL, data)
+
+enum Api {
+LOGIN_URL = '/user/login',
+}
+
+export const reqUserLogin = (data: LoginParams) =>
+request.post<any, ResponseData<User>>(Api.LOGIN_URL, data)
+
    ```

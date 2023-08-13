@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigInteger;
+import java.sql.Timestamp;
 
 @Data
 @AllArgsConstructor
@@ -18,14 +19,15 @@ public class User {
     private String code;
     private String password;
     private String nickname;
-    private String address;
-    private String isDeleted; // 数据库插入时会默认为0，删除时会改为1
+    private String campus;
+    private String dormitory;
+    private Integer isDeleted; // 数据库插入时会默认为0，删除时会改为1
     private String email;
     private String phone;
     @TableField(fill = FieldFill.INSERT)
-    private String gmtCreate;
+    private Timestamp gmtCreate;
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private String gmtModified;
+    private Timestamp gmtModified;
     @TableField(exist = false)
     private String token; // 排除字段，不与数据库进行匹配，只是用来判断登录的权限
 }

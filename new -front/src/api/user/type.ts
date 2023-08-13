@@ -4,7 +4,8 @@ export interface User {
   code: string
   password: string
   nickname: string
-  address: string
+  campus: string
+  dormitory: string
   isDelete: string
   gmtCreate: string
   gmtModified: string
@@ -28,4 +29,28 @@ export interface CheckTokenParams {
 // 提交：通过邮箱获取验证码
 export interface GetVerifyCodeByEmailParams {
   email: string
+}
+
+// 提交：用户注册
+export interface RegisterParams {
+  code: string
+  password: string
+  nickname: string
+  email: string
+  campus: string
+  dormitory: string
+}
+
+// 提交：检查验证码
+export interface CheckVerifyCodeParams {
+  email: string
+  code: string
+}
+
+// 提交：修改
+export interface UpdateParams {
+  code: string
+  target: string
+  tip: string
+  data: string
 }
