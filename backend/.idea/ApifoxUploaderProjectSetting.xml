@@ -9,6 +9,8 @@
         <option value="demo:2395410,测试目录" />
         <option value="MQ-producer-8050:3070495" />
         <option value="user-login-8001:3070495" />
+        <option value="operate-redis-2-8004:3070495" />
+        <option value="operate-redis-1-8003:3070495" />
       </array>
     </option>
     <option name="yapiTokens" value="" />

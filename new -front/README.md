@@ -660,16 +660,23 @@ declare module '*.vue' {
 3. 举例使用
    > ResponseData是一个泛型接口，用于约束返回的数据类型
    ```ts
+   
+   import request from '@/util/request'
+   import {LoginParams, User} from '@/api/user/type'
+   import {ResponseData} from '@/api/type'
+   
+   enum Api {
+   LOGIN_URL = '/user/login',
+   }
+   
+   export const reqUserLogin = (data: LoginParams) =>
+   request.post<any, ResponseData<User>>(Api.LOGIN_URL, data)
+   
+   ```
 
-import request from '@/util/request'
-import {LoginParams, User} from '@/api/user/type'
-import {ResponseData} from '@/api/type'
+# 无限滚动条
 
-enum Api {
-LOGIN_URL = '/user/login',
-}
-
-export const reqUserLogin = (data: LoginParams) =>
-request.post<any, ResponseData<User>>(Api.LOGIN_URL, data)
-
+1. npm安装
+   ```shell
+   pnpm install vue-infinite-loading -S
    ```

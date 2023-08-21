@@ -21,5 +21,15 @@ spring:
           uri: http://localhost:8050
           predicates:
             - Path=/mqProducer/** # 路径相匹配的进行路由
+
+        - id: operate-redis-1-8003
+          uri: http://localhost:8003
+          predicates:
+            - Path=/friend/** # 路径相匹配的进行路由
+
+        - id: operate-redis-2-8004
+          uri: http://localhost:8004
+          predicates:
+            - Path=/message/** # 路径相匹配的进行路由
 #          filters:
 #            - StripPrefix=1 # 去掉前缀

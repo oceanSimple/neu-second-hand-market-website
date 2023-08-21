@@ -5,33 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eabbe58-4746-4a62-8fcb-d6f5c75f5e03" name="更改" comment="2023/7/31">
-      <change afterPath="$PROJECT_DIR$/chat-room-8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MQ-consumer-8051/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MQ-consumer-8051/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operate-redis-1-8003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operate-redis-2-8004/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MQ-producer-8050/src/main/java/com/ocean/controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MQ-producer-8050/src/main/java/com/ocean/controller/VerificationCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MQ-producer-8050/src/main/java/com/ocean/util/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/MQ-producer-8050/src/main/java/com/ocean/util/SendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MQ-producer-8050/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MQ-producer-8050/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application-resources/note/技术笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/application-resources/note/技术笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-gateway-8000/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application-gateway-8000/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-resources/note/redis各库的内容.md" beforeDir="false" afterPath="$PROJECT_DIR$/application-resources/note/redis各库的内容.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-package/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/ocean/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/ocean/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/ocean/handler/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/ocean/handler/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/ocean/entity/chatRoom/Friend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/ocean/entity/chatRoom/Message.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-login-8001/src/main/java/com/ocean/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-8001/src/main/java/com/ocean/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-8001/src/main/java/com/ocean/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-8001/src/main/java/com/ocean/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-8001/src/main/java/com/ocean/service/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-8001/src/main/java/com/ocean/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-8001/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new -front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new -front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new -front/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/api/user/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/api/user/type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/api/user/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/api/user/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/components/Test.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/router/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/router/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new -front/src/store/messageStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/store/messageStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new -front/src/store/userStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/store/userStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/view/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/view/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/src/view/main/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/view/main/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../new -front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new -front/src/util/websocket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/util/websocket.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new -front/src/view/homePage/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/view/homePage/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new -front/src/view/message/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../new -front/src/view/message/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +34,7 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -66,44 +58,51 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindow运行.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ocean/Desktop/Java-WebSocket&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15722656&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31786543&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;546b9f17770cd37e5e2608dbb53f0508&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2022.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindow运行.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "D:/neu-second-hand-market-website/backend/common-package/src/main/java/com/ocean/entity/chatRoom/message",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15722656",
+    "project.structure.side.proportion": "0.31786543",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "c4fbad08dc8f50a5f753a7ee47116e4d",
+    "ts.external.directory.path": "E:\\IntelliJ IDEA 2022.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\neu-second-hand-market-website\backend\common-package\src\main\java\com\ocean\entity\chatRoom\message" />
+      <recent name="D:\neu-second-hand-market-website\backend\common-package\src\main\java\com\ocean\entity\chatRoom\friend" />
+      <recent name="D:\neu-second-hand-market-website\backend\operate-redis-2-8004\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ocean.entity" />
+      <recent name="com.ocean" />
       <recent name="com.ocean.config" />
     </key>
   </component>
@@ -114,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserLogin8001Application">
+  <component name="RunManager" selected="Spring Boot.OperateRedis1">
     <configuration name="ChatRoomApplication8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="chat-room-8002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.ChatRoomApplication8002" />
@@ -167,6 +166,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OperateRedis1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="operate-redis-1-8003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.OperateRedis1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperateRedis2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="operate-redis-2-8004" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.OperateRedis2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserLogin8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="user-login-8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.UserLogin8001Application" />
@@ -180,6 +193,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.OperateRedis1" />
+      <item itemvalue="Spring Boot.OperateRedis2Application" />
+      <item itemvalue="Spring Boot.ChatRoomApplication8002" />
+      <item itemvalue="Spring Boot.GateWayApplication" />
+      <item itemvalue="Spring Boot.MqConsumerApplication" />
+      <item itemvalue="Spring Boot.MqProducerApplication" />
+      <item itemvalue="Spring Boot.UserLogin8001Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserLogin8001Application" />
@@ -191,6 +213,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ocean\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="4eabbe58-4746-4a62-8fcb-d6f5c75f5e03" name="更改" comment="" />
@@ -239,7 +264,17 @@
       <workItem from="1691808482748" duration="6677000" />
       <workItem from="1691815839225" duration="2599000" />
       <workItem from="1691839198361" duration="1400000" />
-      <workItem from="1691883383000" duration="3706000" />
+      <workItem from="1691883383000" duration="11161000" />
+      <workItem from="1691921160340" duration="8289000" />
+      <workItem from="1691987305922" duration="7267000" />
+      <workItem from="1692058464034" duration="7965000" />
+      <workItem from="1692332763745" duration="35000" />
+      <workItem from="1692498576796" duration="701000" />
+      <workItem from="1692564009243" duration="637000" />
+      <workItem from="1692564676066" duration="196000" />
+      <workItem from="1692565062551" duration="1896000" />
+      <workItem from="1692586728291" duration="1989000" />
+      <workItem from="1692589819294" duration="1852000" />
     </task>
     <task id="LOCAL-00001" summary="2023/7/31">
       <created>1690759585573</created>

@@ -26,5 +26,5 @@
 > 存储用户的聊天记录
 > - name: 聊天双方的code（20210000_20210001），小号在前
 > - 结构：list
-> - value: {destination: 接收者的code, message: 消息内容, time: 发送时间, isRead: 是否已读}
+> - value: {sender:发送者，receiver: 接收者的code, message: 消息内容, time: 发送时间, isRead: 是否已读}
 

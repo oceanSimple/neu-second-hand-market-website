@@ -1,15 +1,9 @@
-import { useUserStore } from '@/store/userStore.ts'
-
-const userStore = useUserStore()
-
-export interface Message {
-  destination: string
-  message: string
-  time: string
-}
+import { getObj } from '@/util/localStorageObj.ts'
+import { User } from '@/api/user/type.ts'
 
 export const websocketConnect = (): WebSocket => {
-  const uri = 'ws://localhost:8002/ws/' + userStore.userInfo.code
+  const user = getObj<User>('user') as User
+  const uri = 'ws://localhost:8002/ws/' + user.code
   const socket = new WebSocket(uri)
   socket.onopen = () => {
     console.log('连接成功')

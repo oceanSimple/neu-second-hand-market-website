@@ -21,6 +21,8 @@ import { ElMessage } from 'element-plus'
 import router from '@/router'
 import { Setting } from '@/view/main/setting'
 import { ruleItem, rules } from '@/util/formRules.ts'
+import { useMessageStore } from '@/store/messageStore.ts'
+import { websocketConnect } from '@/util/websocket.ts'
 
 const defaultSetting: Setting = {
   fold: false,
@@ -45,6 +47,7 @@ export const useUserStore = defineStore('User', {
         // 将默认设置存储到localStorage中
         setObj<Setting>('setting', defaultSetting)
         ElMessage.success('登录成功')
+        this.connectSocket()
         await router.push('/homePage')
       } else {
         ElMessage.error(result.msg)
@@ -61,6 +64,7 @@ export const useUserStore = defineStore('User', {
         const result = await reqUserCheckToken(data)
         if (result.code === 200) { // 登录成功
           ElMessage.success('登录成功')
+          this.connectSocket()
           await router.push('/homePage')
         }
       }
@@ -118,6 +122,11 @@ export const useUserStore = defineStore('User', {
       } else {
         ElMessage.error(result.msg)
       }
+    },
+    // 连接socket方法（login和token共同使用）
+    connectSocket: () => {
+      const socket = websocketConnect()
+      useMessageStore().socket = socket
     },
   },
 })

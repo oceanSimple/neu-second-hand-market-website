@@ -12,7 +12,7 @@
 <script lang="ts" setup>
 import Sort from './sort/index.vue'
 import Header from './header/index.vue'
-import { ElMessage } from 'element-plus'
+/*import { ElMessage } from 'element-plus'
 import { onMounted } from 'vue'
 import { useMessageStore } from '@/store/messageStore.ts'
 
@@ -25,7 +25,7 @@ onMounted(() => {
       type: 'success',
     })
   }
-})
+})*/
 </script>
 
 <style lang="scss" scoped>

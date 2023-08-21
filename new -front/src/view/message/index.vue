@@ -1,42 +1,22 @@
 <template>
-  <div>
-    <span>当前用户：{{ user.code }}</span>
-    <br />
-    <br />
-    <br />
-    目的地:
-    <el-input v-model="input.destination"></el-input>
-    <br />
-    消息
-    <el-input v-model="input.message"></el-input>
-    <br />
-    <br />
-    <br />
-    <el-button type="success" @click="sendMessage">发送</el-button>
-  </div>
+  <el-row>
+    <el-col :span="20">
+      <Message></Message>
+    </el-col>
+    <el-col :span="4" class="friend">
+      <Friend></Friend>
+    </el-col>
+  </el-row>
 </template>
 
 <script lang="ts" setup>
-import { reactive } from 'vue'
-import { User } from '@/api/user/type.ts'
-import { getObj } from '@/util/localStorageObj.ts'
-import { useMessageStore } from '@/store/messageStore.ts'
-import { Message } from '@/util/websocket.ts'
-
-const user = getObj<User>('user') as User
-const input = reactive({
-  destination: '78945612',
-  message: '',
-})
-const socket = useMessageStore().socket
-const sendMessage = () => {
-  const message: Message = {
-    destination: input.destination,
-    message: input.message,
-    time: new Date().toLocaleString().toString(),
-  }
-  socket.send(JSON.stringify(message))
-}
+import Friend from '@/view/message/friend/index.vue'
+import Message from '@/view/message/message/index.vue'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.friend {
+  height: 400px;
+  background-color: #e8e8e8;
+}
+</style>

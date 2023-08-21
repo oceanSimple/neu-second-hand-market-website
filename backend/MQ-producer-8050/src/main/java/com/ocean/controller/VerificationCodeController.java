@@ -26,6 +26,12 @@ public class VerificationCodeController {
         this.sendEmail = sendEmail;
     }
 
+    /**
+     * 发送邮箱验证码
+     *
+     * @param data 前端传来的邮箱
+     * @return
+     */
     @PostMapping("/emailVerificationCode")
     public Integer emailVerificationCode(@RequestBody Map<String, String> data) {
         String email = data.get("email");
